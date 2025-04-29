@@ -14,6 +14,6 @@ In this repository, we're upgrading the DART robot for traffic light detection. 
 + The LiDAR is connected directly to the Jetson Nano Expansion Board rather than to the Jetson Nano itself. This setup resolves the issue of the LiDAR drawing too much current from the Jetson Nano.
 + A new camera setup is added to enable the DART to perform traffic light detection.
 
-To see the full Build Instructions for these changes, go to [Build Instruction Section](https://google.com).
+To see the full Build Instructions for these changes, go to [Build Instruction Section](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions).
 
 #
