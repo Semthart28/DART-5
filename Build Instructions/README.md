@@ -18,4 +18,3 @@ The required components for the new camera setup are:
 In order to change the LiDar's power supply, you want to make sure your baseboard is the updated version. This version has an extra gap so the micro-USB can be soldered to the battery pack. Strip your micro-USB to the correct length and attach the power supply to the LiDar. Solder the stripped end of the micro-USB to the labeled '5V' and 'GND' on the right-hand-side of the display. Now the LiDar is directly connected to the battery pack.
 
 # Adding the new camera setup
-
