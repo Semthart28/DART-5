@@ -7,7 +7,7 @@ For all applications of DART, even if you don't want to upgrade the camera, it's
 The required components for the seperate power supply of the LiDar are:
 
 + a micro USB cable
-+ The updated baseboard dxf file [link](google.com)
++ The updated baseboard [dxf file link](google.com)
   
 The required components for the new camera setup are:
 
