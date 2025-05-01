@@ -17,4 +17,7 @@ The two  physical changes we made to the DART are:
 
 To see the full Build Instructions for these changes, go to [Build Instruction Section](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions).
 
-#
+# Software for Traffic Light Detection
+
+
+# Control Algorithm to autonomously drive the car through traffic lights
