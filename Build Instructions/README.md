@@ -32,16 +32,18 @@ Solder the red cable of the micro-USB to the labeled '5V' and the black cable to
 On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiDar as shown in this image below:
 
 <p align="center">
-  <img src="images/Baseboard_1.jpg" width="250">
+  <img src="images/Baseboard_1.jpg" width="350">
 </p>
 
 Attach the blue standoffs and the black standoffs that belong to the LiDar's setup and then attach the baseboard onto the expansionboard.
 
 # Adding the new camera setup
-A close-up of the camera setup is shown here below:
+A side-view of the DART is shown here below:
 
 <p align="center">
-  <img src="images/camera-setup.jpg" width="250">
+  <img src="images/Zijkant_DART.jpg" width="350">
 </p>
 
-You'll need to replace the upper board with the updated version to leave a gap for attaching the camera and enough space to plug in the cable. Plug the other end of the cable into a USB port on the Jetson Nano and your camera-setup is done!
+Attach the 3D-printed camera mounts to the back of the camera with M4 bolts and to the upperboard with M3 bolts. Plug the USB cable in the Jetson Nano and your camera setup is done!
+
+
