@@ -1,7 +1,7 @@
 # Upgrading DART: Adding Traffic Light Detection
 
 <p align="center">
-  <img src="images/DART.jpg" width="250">
+  <img src="images/Complete_DART2.0.jpg" width="500">
 </p>
 
 # This Repo
