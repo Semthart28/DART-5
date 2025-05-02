@@ -46,4 +46,8 @@ A side-view of the DART is shown here below:
 
 Attach the 3D-printed camera mounts to the back of the camera with M4 bolts and to the upperboard with M3 bolts. Plug the USB cable in the Jetson Nano and your camera setup is done!
 
+# Replacing the Brass spacers of the suspension with 3D-printed spacers (Optional)
+If you want to, you can replace the brass spacers of the suspension with the 3D printed 'Bus' STL file.  We did this so we didn't have to buy the brass rings and can print them easily with the other 3D parts.
+
+
 
