@@ -8,7 +8,16 @@ For all applications of DART, even if you don't want to upgrade the camera, it's
 + The updated baseboard and upperboard [dxf files](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions/DXF%20files)
 + The Intel RealSense Depth Camera D455 [link](https://store.intelrealsense.com/buy-intel-realsense-depth-camera-d455.html)
 + The new 3D-printed parts [STL files](google.com) (Carefully read how many times you need to print each file)
-+
++ Some bolts and screws:
+    + 12x M2.5 8mm Stainless Steel Screws
+    + 16x M2.5 Stainless Steel Nuts
+    + 8x M2.5 6mm-6mm brass female-male
+    + 12x M2.5 ~14mm screws
+    + 2x M4 ~8mm screws (Intel camera mounts)
+    + 2x M3 ~10mm screws
+    + 2x M3 nuts
+    + 4x M1.6 ~10mm screws 
+    + 4x M1.6 nuts
 
 # Changing the LiDar's power supply
 In order to change the LiDar's power supply, you need to strip a micro-USB cable. Attach the micro-USB port to the USB adapter board of the LiDar and solder the the stripped end of the cable directly onto the Jetracer Pro Expansionboard as shown in the image below:
