@@ -9,6 +9,12 @@ For all applications of DART, even if you don't want to upgrade the camera, it's
 + The Intel RealSense Depth Camera D455 [link](https://store.intelrealsense.com/buy-intel-realsense-depth-camera-d455.html)
 + The new 3D-printed parts [STL files](google.com) (Carefully read how many times you need to print each file)
 
+
+# Replacing the Baseboard
+On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiDar as shown in this image below:
+
+
+
 # Changing the LiDar's power supply
 In order to change the LiDar's power supply, you need to strip a micro-USB cable. Attach the micro-USB port to the USB adapter board of the LiDar and solder the the stripped end of the cable directly onto the Jetracer Pro Expansionboard as shown in the image below:
 
