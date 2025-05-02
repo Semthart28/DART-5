@@ -11,7 +11,8 @@ In this repository, we're upgrading the DART robot for traffic light detection. 
 + <b>Control</b> a simple control alogrithm that lets the DART drive autonomously without crashing.
 
 # Physical Changes We Made to DART + Building Instructions
-The two  physical changes we made to the DART are:
+The physical changes we made to the DART:
++ We changed the baseboard and upperboard to make the car less top-heavy and be able to install the new camera setup and LiDar power supply.
 + The LiDAR is connected directly to the Jetson Nano Expansion Board rather than to the Jetson Nano itself. This setup resolves the issue of the LiDAR drawing too much current from the Jetson Nano.
 + A new camera setup is added to enable the DART to perform traffic light detection.
 
