@@ -20,6 +20,9 @@ The physical changes we made to the DART:
 To see the full Build Instructions for these changes, go to [Build Instruction Section](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions).
 
 # Software for Traffic Light Detection
-
+For the traffic light detection, we trained the YOLOv3-tiny model on the Bosch small Traffic Lights Dataset. YOlO 'You Only Look Once' is  an open-source state-of-the-art real-time object detection system [1]. The tiny v3 model is compatible with the Jetson Nano's Python and Jetpack version and tiny is 
 
 # Control Algorithm to autonomously drive the car through traffic lights
+
+# References
+https://pjreddie.com/darknet/yolo/
