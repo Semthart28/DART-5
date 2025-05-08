@@ -29,11 +29,14 @@ In order to change the LiDar's power supply, you need to strip a micro-USB cable
 Solder the red cable of the micro-USB to the labeled '5V' and the black cable to the labeled 'GND' on the right-hand-side of the display. Now the LiDar is directly connected to the battery pack.
 
 # Replacing the Baseboard
-On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiDar as shown in this image below:
+On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiDar as shown in this image below (left):
 
 <p align="center">
   <img src="images/Baseboard_1.jpg" width="350">
+  <img src="images/Arduino_nano.jpeg" width="350">
 </p>
+
+On the left, you can see how to attach the Aduino Nano the the slots on the baseboard with the 3D printed pieces.
 
 Attach the blue standoffs and the black standoffs that belong to the LiDar's setup and then attach the baseboard onto the expansionboard.
 
