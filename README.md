@@ -60,7 +60,13 @@ Make sure you're in the darknet directory and run this command to run the model:
 ```
 A tab of your camera should now open and the algorithm will detect traffic lights!
 
+Addtionally, you can play around with the threshold of when it will show the traffic light. Just add this at the end of the previous command:
 
+```
+-thresh 0.08
+```
+
+Now, it detects all traffic lights if the probability is higher than 8%. We found that 8% worked the best for our purpose.
 # Control Algorithm to autonomously drive the car through traffic lights
 
 # References
