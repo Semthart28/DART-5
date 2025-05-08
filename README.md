@@ -13,7 +13,7 @@ In this repository, we're upgrading the DART robot for traffic light detection. 
 # Physical Changes We Made to DART
 The physical changes we made to the DART:
 + We 3D-printed spacers to stiffen the suspension. (Originally, brass spacers were installed).
-+ We changed the baseboard and upperboard to lower the center of mass as much as possible and be able to install the new camera setup and LiDar power supply.
++ We changed the baseboard and upperboard to lower the center of mass as much as possible, mount the electronics better and be able to install the new camera setup and LiDar power supply.
 + We connected The LiDAR's power supply directly onto the Jetson Nano Expansion Board rather than to the Jetson Nano itself. This setup resolves the issue of the LiDAR drawing too much current from the Jetson Nano.
 + We added a new camera setup to enable the DART to perform traffic light detection.
 
