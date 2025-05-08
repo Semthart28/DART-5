@@ -28,11 +28,39 @@ For the traffic light detection, we trained the YOLOv3-tiny model on the [Bosch 
 
 As you can see, the bounding boxes aren't perfect, but that doesn't matter. The model only needs to detect the traffic light and its color. We'll determine the distance to the traffic light with the LiDar later on.
 
-<pre> cd rgb/train </pre>
+We trained our model according to [Berktepebag's Github](https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset) and changed these settings for the training:
++ We set the batch to 64
++ We set the subdivision to 8
++ We set the steps to 24000, 27000
 
+We let the model train overnight and it did about ~26000 iterations. If you want to train your own model, we recommend following Berktepebag's github, but if you just want to apply our model to the DART, follow these steps:
+
+### Step 1: Downloading Darknet
+If you install Darknet from the original website, you're might run into compatibility issues because it has not been updated in a long time. Therefore we'll install Darknet via [AlexeyAB's Github](https://github.com/AlexeyAB/darknet). You do this by running:
+
+```
+git clone https://github.com/AlexeyAB/darknet.git
+cd darknet
+make
+```
+Now make sure you've downloaded CUDA and OpenCV. The Jetson Nano probably already has CUDA pre-installed. In the Makefile in the Darknet directory, edit these lines at the top:
+```
+GPU=1
+OPENCV=1
+```
+Remake the file and you're done.
+
+### Step 2: Download our Trained Model
+In your Darknet directory, make a folder called 'traffic-lights' and add all files from [this folder]()
 
 
 # Control Algorithm to autonomously drive the car through traffic lights
 
 # References
+https://github.com/Lorenzo-Lyons/DART
+
 https://pjreddie.com/darknet/yolo/
+
+https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset
+
+https://github.com/AlexeyAB/darknet
