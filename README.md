@@ -8,7 +8,7 @@
 In this repository, we're upgrading the DART robot for traffic light detection. DART is a robot, created at the TU Delft and instructions for building your own DART can be found [here](https://github.com/Lorenzo-Lyons/DART). In this repository, you'll find:
 + <b>Build instructions</b> for physical changes we made.
 + <b>Software for Traffic Light Detection</b> in order that the DART recognises a traffic light and which light it's currently displaying.
-+ <b>Control</b> a simple control alogrithm that lets the DART drive autonomously without crashing.
++ <b>Control</b> a simple control alogrithm that makes sure the DART stops for a red light and continues for a green light.
 
 # Physical Changes We Made to DART
 The physical changes we made to the DART:
@@ -35,7 +35,7 @@ We trained our model according to [Berktepebag's Github](https://github.com/berk
 
 We let the model train overnight and it did about ~26000 iterations. If you want to train your own model, we recommend following Berktepebag's github, but if you just want to apply our model to the DART, follow these steps:
 
-### Step 1: Downloading Darknet
+### Step 1: Installing Darknet
 If you install Darknet from the original website, you're might run into compatibility issues because it has not been updated in a long time. Therefore we'll install Darknet via [AlexeyAB's Github](https://github.com/AlexeyAB/darknet). You do this by running:
 
 ```
@@ -51,7 +51,14 @@ OPENCV=1
 Remake the file and you're done.
 
 ### Step 2: Download our Trained Model
-In your Darknet directory, make a folder called 'traffic-lights' and add all files from [this folder]()
+In your Darknet directory, make a folder called 'traffic-lights' and add all files from [this folder](https://github.com/Semthart28/DART-5/tree/main/Trained-YOLO-model) except the 'yolov3-tiny-bosch_last.weights' file. Then make a folder called 'backup' within the 'traffic-lights' folder and add the 'yolov3-tiny-bosch_last.weights' file in here.
+
+### Step 3: Running the model
+Make sure you're in the darknet directory and run this command to run the model:
+```
+./darknet detector demo traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg traffic-lights/backup/yolov3-tiny-bosch_last.weights
+```
+A tab of your camera should now open and the algorithm will detect traffic lights!
 
 
 # Control Algorithm to autonomously drive the car through traffic lights
