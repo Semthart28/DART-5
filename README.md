@@ -20,7 +20,13 @@ The physical changes we made to the DART:
 To see the full Build Instructions for these changes, go to [Build Instruction Section](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions).
 
 # Software for Traffic Light Detection
-For the traffic light detection, we trained the YOLOv3-tiny model on the Bosch small Traffic Lights Dataset. YOLO 'You Only Look Once' is  an open-source state-of-the-art real-time object detection system [1]. We used the 'v3' model, since this model is compatible with the Python version and Jetpack version on the Jetson Nano and we used the 'tiny' version because the Jetson Nano has limited processing capabilities. The tiny model provides a much higher fps than the full model, in exchange for a slightly less accurate model, but the accuracy is still good enough.
+For the traffic light detection, we trained the YOLOv3-tiny model on the Bosch small Traffic Lights Dataset. YOLO 'You Only Look Once' is  an open-source state-of-the-art real-time object detection system [1]. We used the 'v3' model, since this model is compatible with the Python version and Jetpack version on the Jetson Nano and we used the 'tiny' version because the Jetson Nano has limited processing capabilities. The tiny model provides a much higher fps than the full model, in exchange for a slightly less accurate model, but the accuracy is still good enough. A snapshot of the detection of two traffic lights is shown here below:
+
+<p align="center">
+  <img src="images/Detection.png" width="500">
+</p>
+
+As you can see, the bounding boxes aren't perfect, but that doesn't matter. The model only needs to detect the traffic light and its color. We'll determine the distance to the traffic light with the LiDar later on.
 
 # Control Algorithm to autonomously drive the car through traffic lights
 
