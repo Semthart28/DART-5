@@ -28,6 +28,10 @@ For the traffic light detection, we trained the YOLOv3-tiny model on the [Bosch 
 
 As you can see, the bounding boxes aren't perfect, but that doesn't matter. The model only needs to detect the traffic light and its color. We'll determine the distance to the traffic light with the LiDar later on.
 
+<pre> cd rgb/train </pre>
+
+
+
 # Control Algorithm to autonomously drive the car through traffic lights
 
 # References
