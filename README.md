@@ -67,7 +67,10 @@ Addtionally, you can play around with the threshold of when it will show the tra
 ```
 
 Now, it detects all traffic lights if the probability is higher than 8%. We found that 8% worked the best for our purpose.
+
 # Control Algorithm to autonomously drive the car through traffic lights
+Now our robot can detect traffic lights, but it still needs to act upon this information. Therefore we need to make a ROS package from our yolo model 
+
 
 # References
 https://github.com/Lorenzo-Lyons/DART
