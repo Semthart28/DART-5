@@ -7,6 +7,7 @@
 # This Repo
 In this repository, we're upgrading the DART robot for traffic light detection. DART is a robot, created at the TU Delft and instructions for building your own DART can be found [here](https://github.com/Lorenzo-Lyons/DART). In this repository, you'll find:
 + <b>Build instructions</b> for physical changes we made.
++ <b>Build instructions</b> for our 3D-printed traffic light.
 + <b>Software for Traffic Light Detection</b> in order that the DART recognises a traffic light and which light it's currently displaying.
 + <b>Control</b> a simple control alogrithm that makes sure the DART stops for a red light and continues through a green light.
 
