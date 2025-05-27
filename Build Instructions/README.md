@@ -9,7 +9,7 @@ At the bottom, you can find how we built our 3D-printed traffic light.
 + a micro USB cable for the LiDar's power supply
 + The updated baseboard and upperboard [dxf files](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions/DXF%20files)
 + The Intel RealSense Depth Camera D455 [link](https://store.intelrealsense.com/buy-intel-realsense-depth-camera-d455.html)
-+ The new 3D-printed parts [STL files](google.com) (Carefully read how many times you need to print each file)
++ The new 3D-printed parts [STL files](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions/STL%20files) (Carefully read how many times you need to print each file)
 + Some bolts and screws:
     + 12x M2.5 8mm Stainless Steel Screws
     + 16x M2.5 Stainless Steel Nuts
@@ -55,7 +55,10 @@ Attach the 3D-printed camera mounts to the back of the camera with M4 bolts and 
 If you want to, you can replace the brass spacers of the suspension with the 3D printed 'Bus' STL file.  We did this so we didn't have to buy the brass rings and can print them easily with the other 3D parts.
 
 # 3D-printed traffic light
-
+<p align="center">
+  <img src="images/Zijkant_DART.jpg" width="350">
+</p>
+For printing the white edge of the traffic light we took advantage of having access to a 3d printer with multiple color usage during prints. We made a separate 3d model for the white edge which we merged in the slicer software with the rest. By having two separate stl's we could easily assign them a different colour and print them as one. Not everyone has access to this kind of printer. In that case you could choose to print them separately in a different color and superglue them together or just print everything in black and use white paint! This would probably give simular results.
 
 
 
