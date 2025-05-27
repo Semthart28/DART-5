@@ -3,7 +3,7 @@ These build instructions assume you already have a DART, according to [Lorenzo L
 
 For all applications of DART, even if you don't want to upgrade the camera, it's best practice to follow the rest of the building instructions in this repository. Changing the LiDar's power supply will prevent the Jetson Nano from overheating. Changing the upperboard and baseboard with the 3D-printed standoffs will lower the center of mass as much as possible. The DART is a really fast robot and could tilt easily in a sharp corner. Especially now with a heavy camera on it. So lowering the center of mass is preferred. Additionally, the Arduino, IMU and USB Adapter Board for the LiDar can now be mounted to the baseboard.
 
-At the bottom, you can find how we built our 3D-printed traffi light.
+At the bottom, you can find how we built our 3D-printed traffic light.
 
 # Required Extra Components
 + a micro USB cable for the LiDar's power supply
