@@ -20,7 +20,7 @@ At the bottom, you can find how we built our 3D-printed traffic light.
     + 2x M3 nuts
     + 4x M1.6 ~10mm screws 
     + 4x M1.6 nuts
-
++ This small Arduino LED display for the traffic light [link](https://nl.aliexpress.com/item/1005006161998547.html?spm=a2g0o.order_list.order_list_main.5.454a79d2ccuUTg&gatewayAdapt=glo2nld)
 # Changing the LiDar's power supply
 In order to change the LiDar's power supply, you need to strip a micro-USB cable. Attach the micro-USB port to the USB adapter board of the LiDar and solder the the stripped end of the cable directly onto the Jetracer Pro Expansionboard as shown in the image below:
 
