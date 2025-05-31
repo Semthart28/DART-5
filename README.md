@@ -43,7 +43,7 @@ git clone https://github.com/pjreddie/darknet.git
 cd darknet
 make
 ```
-Now make sure you've downloaded CUDA and OpenCV. The Jetson Nano probably already has CUDA pre-installed. In the Makefile in the Darknet directory, edit these lines at the top:
+Now, make sure you've downloaded CUDA and OpenCV. The Jetson Nano probably already has CUDA pre-installed. In the Makefile in the Darknet directory, edit the lines at the top like this:
 ```
 GPU=1
 OPENCV=1
@@ -51,25 +51,25 @@ OPENCV=1
 Remake Darknet and you're done.
 
 ### Step 2: Download our Trained Model
-In your Darknet directory, make a folder called 'Model' and add the three files from [this folder](https://github.com/Semthart28/DART-5/tree/main/YOLO-model) Then make a folder called 'backup' within the 'Model' folder and add the 'yolov3-tiny-best.weights' file in there.
+In your Darknet directory, make a folder called 'Model' and add the three files from [this folder](https://github.com/Semthart28/DART-5/tree/main/YOLO-model). Then, make a folder called 'backup' within the 'Model' folder and add the 'yolov3-tiny-tf_best.weights' file in there.
 
 ### Step 3: Running the model
 Make sure you're in the darknet directory and run this command to run the model:
 ```
-./darknet detector demo traffic-lights/voc-bosch.data traffic-lights/yolov3-tiny-bosch.cfg traffic-lights/backup/yolov3-tiny-bosch_last.weights
+./darknet detector demo Model/tf-data.data Model/yolov3-tiny-tf.cfg Model/backup/yolov3-tiny-tf_best.weights
 ```
-A tab of your camera should now open and the algorithm will detect traffic lights!
+A tab of your camera should now open, and the algorithm will detect traffic lights!
 
-Addtionally, you can play around with the threshold of when it will show the traffic light. Just add this at the end of the previous command:
+Additionally, you can play around with the threshold of when it will show the traffic light. Just add this at the end of the previous command:
 
 ```
--thresh 0.08
+-thresh 0.20
 ```
 
-Now, it detects all traffic lights if the probability is higher than 8%. We found that 8% worked the best for our purpose.
+Now, it detects all traffic lights if the probability is higher than 20%.
 
 # Control Algorithm to autonomously drive the car through traffic lights
-Now our robot can detect traffic lights, but it still needs to act upon this information. Therefore we need to make a ROS package from our yolo model. 
+Now our robot can detect traffic lights, but it still needs to act upon this information. Therefore, we need to make a ROS package from our yolo model to publish information about the traffic light to our controller. 
 
 
 # References
