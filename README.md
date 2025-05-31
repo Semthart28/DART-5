@@ -24,7 +24,7 @@ To see the full Build Instructions for these changes, go to [Build Instruction S
 For the traffic light detection, we trained the YOLOv3-tiny model on roughly 500 images of our 3D-printed traffic light. [YOLO](https://pjreddie.com/darknet/yolo/) 'You Only Look Once' is  an open-source, state-of-the-art real-time object detection system [1]. We used the 'v3' model, since this model is compatible with the Python version and Jetpack version on the Jetson Nano and we used the 'tiny' version because the Jetson Nano has limited processing capabilities. The tiny model provides a much higher fps than the full model, in exchange for a slightly less accurate model, but the accuracy is still good enough. A short clip of the detection of a traffic light is shown here below:
 
 <p align="center">
-  <img src="media/video2.gif" alt="Demo of feature" />
+  <img src="media/videov3.gif" alt="Demo of feature" />
 </p>
 
 As you can see, the fps still isn't that great. However, the information stream is much quicker than the graphics on the camera. The controller will react on the information stream and not on the video stream so the video being a bit slow isn't an issue. We'll determine the distance to the traffic light with the LiDar later on.
