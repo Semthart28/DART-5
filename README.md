@@ -51,7 +51,7 @@ OPENCV=1
 Remake Darknet and you're done.
 
 ### Step 2: Download our Trained Model
-In your Darknet directory, make a folder called 'traffic-lights' and add all files from [this folder](https://github.com/Semthart28/DART-5/tree/main/Trained-YOLO-model) except the 'yolov3-tiny-bosch_last.weights' file. Then make a folder called 'backup' within the 'traffic-lights' folder and add the 'yolov3-tiny-bosch_last.weights' file in there.
+In your Darknet directory, make a folder called 'Model' and add the three files from [this folder](https://github.com/Semthart28/DART-5/tree/main/YOLO-model) Then make a folder called 'backup' within the 'Model' folder and add the 'yolov3-tiny-best.weights' file in there.
 
 ### Step 3: Running the model
 Make sure you're in the darknet directory and run this command to run the model:
