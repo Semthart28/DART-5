@@ -1,0 +1,5 @@
+classes= 3
+train  = Third-Training/train.txt
+valid  = Third-Training/test.txt
+names = Third-Training/tf-names.names
+backup = Third-Training/backup
