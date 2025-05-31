@@ -38,7 +38,7 @@ On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiD
   <img src="images/Arduino_nano.jpeg" width="350">
 </p>
 
-On the left, you can see how to attach the Aduino Nano the the slots on the baseboard with the 3D printed pieces.
+On the left, you can see how to attach the Aduino Nano to the slots on the baseboard with the 3D printed pieces.
 
 Attach the blue standoffs and the black standoffs that belong to the LiDar's setup and then attach the baseboard onto the expansionboard.
 
