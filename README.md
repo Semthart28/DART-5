@@ -71,7 +71,6 @@ Now, it detects all traffic lights if the probability is higher than 20%.
 # Control Algorithm to autonomously drive the car through traffic lights
 Now our robot can detect traffic lights, but it still needs to act upon this information. Therefore, we need to make a ROS package from our yolo model to publish information about the traffic light to our controller. 
 
-ghp_1MSBWSR5Un2P  hLgM3uLuiCyW4cTIIx1jMoql
 
 # References
 https://github.com/Lorenzo-Lyons/DART
