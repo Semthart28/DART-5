@@ -1,27 +1,27 @@
-# Upgrading DART: Adding Traffic Light Detection
+# Upgrading DART: Adding Traffic Light Detection and Control
 
 <p align="center">
   <img src="images/Complete_DART2.0.jpg" width="500">
 </p>
 
 # This Repo
-In this repository, we're upgrading the DART robot for traffic light detection. DART is a robot, created at the TU Delft and instructions for building your own DART can be found [here](https://github.com/Lorenzo-Lyons/DART). In this repository, you'll find:
+In this repository, we're upgrading the DART robot for traffic light detection. DART is a robot, created at the TU Delft, and instructions for building your own DART can be found [here](https://github.com/Lorenzo-Lyons/DART). In this repository, you'll find:
 + <b>Build instructions</b> for physical changes we made.
 + <b>Build instructions</b> for our 3D-printed traffic light.
 + <b>Software for Traffic Light Detection</b> in order that the DART recognises a traffic light and which light it's currently displaying.
-+ <b>Control</b> a control algorithm that makes sure the DART stops for a red light, continues through a green light, and acts accordingly to a yellow light.
++ <b>Control</b> a control algorithm that makes sure the DART stops for a red light, continues through a green light, and acts appropriately to a yellow light.
 
 # Physical Changes We Made to DART
 The physical changes we made to the DART:
-+ We changed the baseboard and upperboard to lower the center of mass as much as possible, mount the electronics better and be able to install the new camera setup and LiDar power supply.
-+ We connected the LiDAR's power supply directly onto the Jetson Nano Expansion Board rather than to the Jetson Nano itself. This setup resolves the issue of the LiDAR drawing too much current from the Jetson Nano.
++ We changed the baseboard and upperboard to lower the center of mass as much as possible, mount the electronics better, and be able to install the new camera setup and LiDar power supply.
++ We connected the LiDAR's power supply directly to the Jetson Nano Expansion Board rather than to the Jetson Nano itself. This setup resolves the issue of the LiDAR drawing too much current from the Jetson Nano.
 + We added a new camera setup to enable the DART to perform traffic light detection.
-+ We 3D-printed spacers to stiffen the suspension. (Originally, brass spacers were installed).
++ We 3D-printed spacers to stiffen the suspension. (Originally, brass spacers were installed.)
 
 To see the full Build Instructions for these changes, and how to replicate our 3D-printed traffic light, go to [Build Instruction Section](https://github.com/Semthart28/DART-5/tree/main/Build%20Instructions).
 
 # Software for Traffic Light Detection
-For the traffic light detection, we trained the YOLOv3-tiny model on roughly 500 images of our 3D-printed traffic light. [YOLO](https://pjreddie.com/darknet/yolo/) 'You Only Look Once' is  an open-source, state-of-the-art real-time object detection system [1]. We used the 'v3' model, since this model is compatible with the Python version and Jetpack version on the Jetson Nano and we used the 'tiny' version because the Jetson Nano has limited processing capabilities. A short clip of the detection of a traffic light is shown here below:
+For the traffic light detection, we trained the YOLOv3-tiny model on roughly 500 images of our 3D-printed traffic light. [YOLO](https://pjreddie.com/darknet/yolo/) 'You Only Look Once' is  an open-source, state-of-the-art real-time object detection system [1]. A short clip of the detection of a traffic light is shown below:
 
 <p align="center">
   <img src="media/videov3.gif" alt="Demo of feature" />
@@ -43,7 +43,7 @@ git clone https://github.com/pjreddie/darknet.git
 cd darknet
 make
 ```
-Now, make sure you've downloaded CUDA and OpenCV. The Jetson Nano probably already has CUDA pre-installed. In the Makefile in the Darknet directory, edit the lines at the top like this:
+Now, make sure you've downloaded CUDA and OpenCV. The Jetson Nano already has CUDA pre-installed if you downloaded the Jetpack SDK. In the Makefile in the Darknet directory, edit the lines at the top like this:
 ```
 GPU=1
 OPENCV=1
