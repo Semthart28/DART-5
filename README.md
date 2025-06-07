@@ -68,8 +68,10 @@ Additionally, you can play around with the threshold of when it will show the tr
 
 Now, it detects all traffic lights if the probability is higher than 20%.
 
-# Control Algorithm to autonomously drive the car through traffic lights
-Now our robot can detect traffic lights, but it still needs to act upon this information. Therefore, we need to make a ROS package from our yolo model to publish information about the traffic light to our controller. 
+# Control Algorithm 
+The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). We needed to make two adjustments in the YoloObjectDetector.cpp file in order to make it compatible with DART. The two problems were that the color codes of darknet_ros didn't match the Intel camera's published color stream, and the second problem was that the RAM of the Jetson Nano would fill up, and then it would freeze. These two changes fixed those problems:
+
+
 
 
 # References
