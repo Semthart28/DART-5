@@ -27,13 +27,13 @@ For the traffic light detection, we trained the YOLOv3-tiny model on roughly 500
   <img src="media/videov3.gif" alt="Demo of feature" />
 </p>
 
-We drew the bounding boxes around the traffic light with [LabelImg](https://github.com/HumanSignal/labelImg) to create the .txt files that tell the model which class it is (0, 1, or 2 for Red, Yellow, or Green, respectively) and the coordinates that define the bounding box around the traffic light. We then used an 80/20 training/testing split with the images and let the model do 4600 iterations.
+We drew the bounding boxes around the traffic light with [LabelImg](https://github.com/HumanSignal/labelImg) to create the .txt files that tell the model which class it is (0, 1, or 2 for Red, Yellow, or Green, respectively) and the coordinates that define the bounding box around the traffic light. We then used an 80/20 training/testing split with the images.
 
 Our configuration file is based on [Berktepebag's Github](https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic-light-dataset) with these changed settings for the training:
 + We set the max iterations to 6000 
 + We set the batch to 64
 + We set the subdivision to 12
-+ We set the steps to 4800, 5400 (which were not necessary because we never did more than 4600 iterations, but you can run it for 6000 iterations if you want .)
++ We set the steps to 4800, 5400
 
 The DART can detect the traffic light colors from more than 1.5 meters away. Below are the instructions to add the traffic light detection to your DART.
 
