@@ -82,3 +82,6 @@ https://github.com/berktepebag/Traffic-light-detection-with-YOLOv3-BOSCH-traffic
 https://github.com/HumanSignal/labelImg
 
 https://github.com/AlexeyAB/darknet
+
+https://github.com/leggedrobotics/darknet_ros
+
