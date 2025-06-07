@@ -71,8 +71,23 @@ Now, it detects all traffic lights if the probability is higher than 20%.
 # Control Algorithm 
 The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). We needed to make two adjustments in the YoloObjectDetector.cpp file in order to make it compatible with DART. The two problems were that the color codes of darknet_ros didn't match the Intel camera's published color stream, and the second problem was that the RAM of the Jetson Nano would fill up, and then it would freeze. These two changes fixed those problems:
 
+Next up, download the tf_controller_pkg folder from this repository, and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
 
+```
+roslaunch tf_controller_pkg tf_controller.launch
+```
 
+The safety value is still on, so you have to run the gamepad basic file and hold R1 on the controller to remove the safety value. Comment out all the throttle commands in the gamepad_basic.py file from [Lorenzo's GitHub](https://github.com/Lorenzo-Lyons/DART), and put the throttle value in the racecar_universal.py file to 0.13. Run these in seperate terminals:
+
+```
+rosrun racecar_pkg racecar_universal.py
+```
+
+```
+rosrun racecar_pkg gamepad_basic.py
+```
+
+Now hold the R1 button on the controller to disable the safety value and the control works!
 
 # References
 https://github.com/Lorenzo-Lyons/DART
