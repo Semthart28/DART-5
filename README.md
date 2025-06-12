@@ -70,7 +70,11 @@ Additionally, you can play around with the threshold of when it will show the tr
 Now, it detects all traffic lights if the probability is higher than 20%.
 
 # Control Algorithm 
-The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). We needed to make two adjustments in the YoloObjectDetector.cpp file in order to make it compatible with DART. The two problems were that the color codes of darknet_ros didn't match the Intel camera's published color stream, and the second problem was that the RAM of the Jetson Nano would fill up, and then it would freeze. These two changes fixed those problems:
+The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). Follow the melodic-and-noetic branch, but download the YoloObjectDetector.cpp file from the fix/memory_leak branch and use that. Otherwise, the RAM of the Jetson Nano will fill up, and the system freezes up. Make this change to the YoloObjectDetector.cpp file, so the color codes of darknet_ros and the published color stream of the intel camera match up:
+
+```
+
+```
 
 Next up, download the tf_controller_pkg folder from this repository, and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
 
