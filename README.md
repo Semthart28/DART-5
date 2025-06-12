@@ -72,7 +72,7 @@ Now, it detects all traffic lights if the probability is higher than 20%.
 # Control Algorithm 
 The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). Follow the melodic-and-noetic branch, but download the YoloObjectDetector.cpp file from this repository. We made the .cpp file compatible with the DART by using the fix/memory_leak branch. Originally, the RAM would fill up, and the system would freeze. Additionally, we made sure the color codes of Darknet ROS and the Intel camera match up. 
 
-Next up, download the tf_controller_pkg folder from this repository, and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
+Next up, download the tf_controller_pkg folder from this repository (Not yet uploaded to this repo, will do that tomorrow), and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
 
 ```
 roslaunch tf_controller_pkg tf_controller.launch
