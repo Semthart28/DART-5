@@ -72,13 +72,13 @@ Now, it detects all traffic lights if the probability is higher than 20%.
 # Control Algorithm 
 The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). Follow the melodic-and-noetic branch, but download the YoloObjectDetector.cpp file from this repository. We made the .cpp file compatible with the DART by using the fix/memory_leak branch. Originally, the RAM would fill up, and the system would freeze. Additionally, we made sure the color codes of Darknet ROS and the Intel camera match up. 
 
-Next up, download the tf_controller_pkg folder from this repository (Not yet uploaded to this repo, will do that tomorrow), and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
+Next up, download the tf_controller_pkg folder from this repository (Not yet uploaded to this repo, will do that monday), and put it in your catkin workspace. Remake your catkin workspace and run it with this command:
 
 ```
 roslaunch tf_controller_pkg tf_controller.launch
 ```
 
-The safety value is still on, so you have to run the gamepad basic file and hold R1 on the controller to remove the safety value. Comment out all the throttle commands in the gamepad_basic.py file from [Lorenzo's GitHub](https://github.com/Lorenzo-Lyons/DART), and put the throttle value in the racecar_universal.py file to 0.13. Run these in seperate terminals:
+The safety value is still on, so you have to run the gamepad basic file and hold R1 on the controller to remove the safety value. Comment out all the throttle commands in the gamepad_basic.py file from [Lorenzo's GitHub](https://github.com/Lorenzo-Lyons/DART), and put the throttle value in the racecar_universal.py file to 0.13. Run these in separate terminals:
 
 ```
 rosrun racecar_pkg racecar_universal.py
