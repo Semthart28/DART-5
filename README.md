@@ -67,7 +67,7 @@ Additionally, you can play around with the threshold of when it will show the tr
 -thresh 0.20
 ```
 
-Now, it detects all traffic lights if the probability is higher than 20%.
+Now, it detects all traffic lights if the confidence is higher than 20%.
 
 # Control Algorithm 
 The first thing we need to do now is to turn our detection algorithm into a ROS package so the DART can act upon this information. This is done via the [darknet_ros Github](https://github.com/leggedrobotics/darknet_ros). Follow the melodic-and-noetic branch, but download the YoloObjectDetector.cpp file from this repository. We made the .cpp file compatible with the DART by using the fix/memory_leak branch. Originally, the RAM would fill up, and the system would freeze. Additionally, we made sure the color codes of Darknet ROS and the Intel camera match up. 
