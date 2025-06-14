@@ -59,7 +59,7 @@ Attach the 3D-printed camera mounts to the back of the camera with M4 bolts and 
 If you want to, you can replace the brass spacers of the suspension with the 3D printed 'Bus' STL file.  We did this so we didn't have to buy the brass rings and can print them easily with the other 3D parts.
 
 # 3D-printed traffic light
-We designed a small 3D-printed traffic light that resembles a realistic Dutch traffic light. You will need the three 'traffic light' STL files, the LED Arduino display, any Arduino-compatible microcontroller, and the [Arduino code](Google.com).
+We designed a small 3D-printed traffic light that resembles a realistic Dutch traffic light. You will need the three 'traffic light' STL files, the LED Arduino display, any Arduino-compatible microcontroller, and the [Arduino code](https://github.com/Semthart28/DART-5/tree/main/Arduino_files).
 
 For printing the white edge of the traffic light, we made a separate 3D model for the white edge, which we merged in the slicer software with the rest. By having two separate STLs, you can assign different colors to the different parts of the traffic light:
 <p align="center">
