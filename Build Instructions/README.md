@@ -26,13 +26,13 @@ At the bottom, you can find how we built our 3D-printed traffic light.
 
 
 # Changing the LiDar's power supply
-In order to change the LiDar's power supply, you need to strip a micro-USB cable. Attach the micro-USB port to the USB adapter board of the LiDar and solder the the stripped end of the cable directly onto the Jetracer Pro Expansionboard as shown in the image below:
+In order to change the LiDar's power supply, you need to strip a micro-USB cable. Attach the micro-USB port to the USB adapter board of the LiDAR and solder the stripped end of the cable directly onto the JetRacer Pro Expansionboard as shown in the image below:
 
 <p align="center">
   <img src="images/Back_of_ExpansionBoard.JPG" width="250">
 </p>
 
-Solder the red cable of the micro-USB to the labeled '5V' and the black cable to the labeled 'GND' on the right-hand-side of the display. Now the LiDar is directly connected to the battery pack.
+Solder the red cable of the micro-USB to the labeled '5V' and the black cable to the labeled 'GND' on the right-hand side of the display. Now the LiDar is directly connected to the battery pack.
 
 # Replacing the Baseboard
 On the new baseboard, you can attach the IMU and the USB Adapterboard of the LiDar as shown in this image below (left):
