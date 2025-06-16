@@ -1,0 +1,37 @@
+<launch>
+
+  <!-- Start RealSense Camera -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="depth_fps" value="5"/>
+    <arg name="color_fps" value="5"/>
+    <arg name="enable_depth" value="false"/>
+    <arg name="color_width" value="848"/>
+    <arg name="color_height" value="480"/>
+    <arg name="enable_confidence" value="false"/>
+    <arg name="publish_tf" value="false"/>
+    <arg name="publish_odom_tf" value="false"/>
+    <arg name="filters" value="decimation"/>
+</include>
+
+  <!-- Start LiDAR -->
+  <include file="$(find ydlidar_ros_driver)/launch/X4.launch" />
+
+  <!-- Start YOLO model -->
+  <include file="$(find darknet_ros)/launch/darknet_ros.launch" />
+  
+  <!-- Rosserial node -->
+  <node pkg="rosserial_python"
+        type="serial_node.py"
+        name="serial_node"
+        output="screen">
+    <param name="port" value="/dev/ttyUSB1"/>
+    <param name="baud" value="57600"/>
+  </node>
+
+  <!-- Custom Python Nodes -->
+  <node name="angle_estimator_node" pkg="tf_controller_pkg" type="angle_estimator_node.py" output="screen" />
+  <node name="distance_estimator_node" pkg="tf_controller_pkg" type="distance_estimator_node.py" output="screen" />
+  <node name="traf_perception_node" pkg="tf_controller_pkg" type="traf_perception_node.py" output="screen" />
+  <node name="FSM5" pkg="tf_controller_pkg" type="FSM5.py" output="screen" />
+
+</launch>
